@@ -165,7 +165,7 @@ transform = Transform3D(0.995316, 0, -0.0966799, 0, 1, 0, 0.0966799, 0, 0.995316
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.498435, 1.04456, 6.24435)
 
 [node name="platform-grass-large-round3" parent="World" instance=ExtResource("16_4x35u")]
-transform = Transform3D(-0.989085, 0, 0.147343, 0, 1, 0, -0.147343, 0, -0.989085, -2.63518, 0.951342, 3.40817)
+transform = Transform3D(-0.989085, 0, 0.147343, 0, 1, 0, -0.147343, 0, -0.989085, -2.35381, 0.951342, -1.16122)
 
 [node name="platform-grass-large-round4" parent="World" instance=ExtResource("16_4x35u")]
 transform = Transform3D(-0.294924, 0, 0.955521, 0, 1, 0, -0.955521, 0, -0.294924, 0.406457, 0.754891, 5.06137)
