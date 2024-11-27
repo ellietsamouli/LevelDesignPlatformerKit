@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://bs65o07otxbmm" path="res://objects/moving_object_path_3d.tscn" id="6_4dt55"]
 [ext_resource type="PackedScene" uid="uid://dhxok27jxvik8" path="res://objects/flag.tscn" id="7_6ri33"]
 [ext_resource type="PackedScene" uid="uid://c8up71en5djgm" path="res://objects/platform_falling.tscn" id="7_hfwuo"]
-[ext_resource type="PackedScene" uid="uid://dwvhgrcyestak" path="res://objects/trap_spikes.tscn" id="10_nml2y"]
 [ext_resource type="PackedScene" uid="uid://cqv8tqkglueog" path="res://models/props/fence-corner.glb" id="11_0nr0w"]
 [ext_resource type="PackedScene" uid="uid://ca3x0hnr25xhm" path="res://models/props/fence-straight.glb" id="12_05l4n"]
 [ext_resource type="PackedScene" uid="uid://uqr4hswv6d2g" path="res://objects/platform_grass_large_round.tscn" id="16_4x35u"]
@@ -23,9 +22,16 @@
 auto_exposure_scale = 0.75
 dof_blur_far_distance = 0.01
 
-[sub_resource type="Curve3D" id="Curve3D_jbqf2"]
+[sub_resource type="Curve3D" id="Curve3D_clxgl"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.73013, 0.120699, 6.28883, 0, 0, 0, 0, 0, 0, -3.16929, -2.41592, 10.7208),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -29.2651, -2.41592, 21.7512, 0, 0, 0, 0, 0, 0, -29.0868, 2.9875, 21.7512),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_rnsrj"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.61623, 0.353048, 6.38725, 0, 0, 0, 0, 0, 0, -3.61623, -1.92616, 10.5215),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -103,16 +109,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6272, 1.97562, 11.5812)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.8588, 2.70105, 35.7733)
 
 [node name="platform-large6" parent="World" instance=ExtResource("5_6arvf")]
-transform = Transform3D(4.99938, 0.0157073, 0, -0.0785366, 0.999877, 0, 0, 0, 5, -16.5205, -3.27629, 5.60622)
-
-[node name="platform-large7" parent="World" instance=ExtResource("5_6arvf")]
-transform = Transform3D(4.99938, 0.0157073, 0, -0.0785366, 0.999877, 0, 0, 0, 5, -16.5205, -3.27629, 30.4625)
-
-[node name="platform-large8" parent="World" instance=ExtResource("5_6arvf")]
-transform = Transform3D(4.99938, 0.0157073, 0, -0.0785366, 0.999877, 0, 0, 0, 5, -41.2748, -2.80068, 30.4625)
-
-[node name="platform-large9" parent="World" instance=ExtResource("5_6arvf")]
-transform = Transform3D(4.99938, 0.0157073, 0, -0.0785366, 0.999877, 0, 0, 0, 5, -41.2748, -2.80068, 5.46246)
+transform = Transform3D(10, 0, 0, 0, 2, 0, 0, 0, 10, -29.0875, -3.27629, 19.88)
 
 [node name="platform-falling" parent="World" instance=ExtResource("7_hfwuo")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6317, 2.60372, 28.26)
@@ -122,29 +119,71 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6317, 2.60372, 31.3405)
 
 [node name="platform-moving" parent="World" instance=ExtResource("4_8clpr")]
 process_priority = 1
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.16929, -2.41592, 10.7208)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.61623, -1.92616, 10.5215)
+
+[node name="platform-moving2" parent="World" instance=ExtResource("4_8clpr")]
+process_priority = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.3047, -2.20039, 21.7512)
 
 [node name="moving_object_path" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_4dt55")]
-curve = SubResource("Curve3D_jbqf2")
-object_to_move = NodePath("../platform-moving")
+curve = SubResource("Curve3D_clxgl")
+object_to_move = NodePath("../platform-moving2")
 movement_speed = 2.0
-look_at_object_when_activated = true
 ping_pong = true
 
-[node name="trap-spikes" parent="World" instance=ExtResource("10_nml2y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.137, -2.32743, 17.4993)
-
-[node name="trap-spikes2" parent="World" instance=ExtResource("10_nml2y")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.9371, -2.32743, 17.4993)
+[node name="moving_object_path2" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_4dt55")]
+curve = SubResource("Curve3D_rnsrj")
+object_to_move = NodePath("../platform-moving")
+movement_speed = 2.0
+ping_pong = true
 
 [node name="fence-corner2" parent="World" instance=ExtResource("11_0nr0w")]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -7.64947, -2.93031, 16.5228)
+
+[node name="fence-corner4" parent="World" instance=ExtResource("11_0nr0w")]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -7.73192, -2.93031, -1.07087)
+
+[node name="fence-corner5" parent="World" instance=ExtResource("11_0nr0w")]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -27.122, -2.93031, -1.07087)
+
+[node name="fence-corner3" parent="World" instance=ExtResource("11_0nr0w")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -27.0861, -2.93031, 16.5228)
 
 [node name="fence-straight2" parent="World" instance=ExtResource("12_05l4n")]
 transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -7.65829, -2.94941, 14.5384)
 
 [node name="fence-straight3" parent="World" instance=ExtResource("12_05l4n")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9.64509, -2.9303, 16.5268)
+
+[node name="fence-straight4" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -14.6191, -2.9303, 16.5268)
+
+[node name="fence-straight5" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -19.4718, -2.9303, 16.5268)
+
+[node name="fence-straight13" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -23.1319, -2.9303, 16.5268)
+
+[node name="fence-straight6" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -22.4912, -2.9303, -1.08408)
+
+[node name="fence-straight7" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -17.5195, -2.9303, -1.07095)
+
+[node name="fence-straight10" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -27.1193, -2.9303, 11.5296)
+
+[node name="fence-straight11" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -27.1193, -2.9303, 6.54081)
+
+[node name="fence-straight12" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, -27.1193, -2.9303, 1.6651)
+
+[node name="fence-straight8" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, -12.6691, -2.9303, -1.08719)
+
+[node name="fence-straight9" parent="World" instance=ExtResource("12_05l4n")]
+transform = Transform3D(-2.18557e-07, 0, 5, 0, 5, 0, -5, 0, -2.18557e-07, -7.73253, -2.9303, 3.93064)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
