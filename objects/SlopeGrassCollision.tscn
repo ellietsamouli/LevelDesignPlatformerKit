@@ -5,13 +5,13 @@
 [node name="Node3D" type="Node3D"]
 
 [node name="block-grass-large-slope-steep2" parent="." instance=ExtResource("1_4xmhi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.36632, 0, 3.62983)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35819, 0, 0.220259)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="block-grass-large-slope-steep2"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="block-grass-large-slope-steep2/StaticBody3D"]
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="block-grass-large-slope-steep2/StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.567169, -0.860068, 0, 0.331453, 1.47171, 0, 0.0696514, -0.269701)
-depth = 1.78
+transform = Transform3D(1, 0, 0, 0, 0.567169, -0.860068, 0, 0.331453, 1.47171, 0, 0.0696514, -0.383558)
+depth = 1.16
 polygon = PackedVector2Array(-0.992411, 1.13244, -1.0365, -0.033064, 1.05485, -0.0136998, 0.99286, 1.13502)

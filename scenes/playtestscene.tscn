@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://g73m8k0j7lyo" path="res://objects/button.tscn" id="12_6e2i7"]
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="13_lyl3n"]
 [ext_resource type="PackedScene" uid="uid://crwstgv07chq8" path="res://objects/grasscollision.tscn" id="14_s02wx"]
-[ext_resource type="PackedScene" uid="uid://dx45f310jevat" path="res://objects/SlopeGrass.tscn" id="15_b76ca"]
+[ext_resource type="PackedScene" uid="uid://dx45f310jevat" path="res://objects/SlopeGrassCollision.tscn" id="15_b76ca"]
 [ext_resource type="PackedScene" uid="uid://uqr4hswv6d2g" path="res://objects/platform_grass_large_round.tscn" id="16_4x35u"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="19_pkxs7"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="20_d5mna"]
@@ -232,7 +232,7 @@ transform = Transform3D(0.0196861, 0, -0.999806, 0, 1, 0, 0.999806, 0, 0.0196861
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -42.3207, -2.27629, 3.47869)
 
 [node name="Node3D2" parent="World" instance=ExtResource("15_b76ca")]
-transform = Transform3D(-0.0830739, 0, -4.99931, 0, 5, 0, 4.99931, 0, -0.0830739, -29.4281, -2.43928, -23.5942)
+transform = Transform3D(4.99931, 0, -0.0830737, 0, 5, 0, 0.0830737, 0, 4.99931, -48.2486, -2.43928, 5.72007)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
