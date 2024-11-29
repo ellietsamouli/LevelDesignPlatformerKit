@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0uph1mqb1ebx"
-path.s3tc="res://.godot/imported/button-square.png-6ff78d135e5788104eb6dc135e513a15.s3tc.ctex"
+path.s3tc="res://.godot/imported/button-square.png-9a493c16ab84d3c7370637b810d95604.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://models/props/button-square.png"
-dest_files=["res://.godot/imported/button-square.png-6ff78d135e5788104eb6dc135e513a15.s3tc.ctex"]
+source_file="res://models/prototyping/button-square.png"
+dest_files=["res://.godot/imported/button-square.png-9a493c16ab84d3c7370637b810d95604.s3tc.ctex"]
 
 [params]
 
