@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhph7caeowxxo"]
+
+[ext_resource type="PackedScene" uid="uid://2briludp3y6q" path="res://models/prototyping/models/wall.glb" id="1_bfgds"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="wall2" parent="StaticBody3D" instance=ExtResource("1_bfgds")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.00392687, 0.0121355, 0.122816)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0166854, -0.0144483, 0.170847)
+depth = 0.33
+polygon = PackedVector2Array(-0.55024, 1.00172, -0.527823, -0.00143635, 0.492144, -0.00143635, 0.48654, 1.02413)

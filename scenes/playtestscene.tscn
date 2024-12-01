@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cqyaf21kafek"]
+[gd_scene load_steps=36 format=3 uid="uid://cqyaf21kafek"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ao01u"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_tcqfi"]
@@ -24,6 +24,7 @@
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="22_c5qgw"]
 [ext_resource type="Theme" uid="uid://d3avl0mr4r87l" path="res://themes/default_theme.tres" id="23_rmp0y"]
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_qvm5p"]
+[ext_resource type="PackedScene" uid="uid://bhph7caeowxxo" path="res://wall.tscn" id="25_qw6fi"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -499,6 +500,18 @@ text = "TIME"
 label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Node3D" parent="." instance=ExtResource("25_qw6fi")]
+transform = Transform3D(-2.18557e-07, 0, 2, 0, 5, 0, -5, 0, -8.74228e-08, -107.48, 6.86411, 26.7308)
+
+[node name="Node3D2" parent="." instance=ExtResource("25_qw6fi")]
+transform = Transform3D(-2.18557e-07, 0, 2, 0, 5, 0, -5, 0, -8.74228e-08, -107.48, 6.86411, 21.7087)
+
+[node name="Node3D3" parent="." instance=ExtResource("25_qw6fi")]
+transform = Transform3D(-2.18557e-07, 0, 2, 0, 5, 0, -5, 0, -8.74228e-08, -107.418, 6.86411, 14.7263)
+
+[node name="Node3D4" parent="." instance=ExtResource("25_qw6fi")]
+transform = Transform3D(-2.18557e-07, 0, 2, 0, 5, 0, -5, 0, -8.74228e-08, -107.418, 6.86411, 9.70415)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
