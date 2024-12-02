@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhekvn36jkr03"]
+
+[ext_resource type="PackedScene" uid="uid://bsrmqj84lksd7" path="res://models/core_models/cloud.glb" id="1_88o7f"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.334764, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+transform = Transform3D(0.920488, 0, 0, 0, 0.575077, 0, 0, 0, 1.19311, 0.668397, 0.970099, -7.19261)
+depth = 31.53
+polygon = PackedVector2Array(-2.78509, 1.68293, -2.78509, -1.6685, 17.1407, -1.4857, 17.0797, 1.50012)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+
+[node name="cube" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, 9.08808)
+
+[node name="cube2" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 4.69681, -1.07107, 9.08808)
+
+[node name="cube3" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 9.20885, -1.07107, 9.08808)
+
+[node name="cube4" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 13.8608, -1.07107, 9.08808)
+
+[node name="cube5" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, 4.39423)
+
+[node name="cube6" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 4.69681, -1.07107, 4.39423)
+
+[node name="cube7" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 9.20885, -1.07107, 4.39423)
+
+[node name="cube8" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 13.8608, -1.07107, 4.39423)
+
+[node name="cube9" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, -0.425356)
+
+[node name="cube10" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 4.69681, -1.07107, -0.425356)
+
+[node name="cube11" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 9.20885, -1.07107, -0.425356)
+
+[node name="cube12" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 13.8608, -1.07107, -0.425356)
+
+[node name="cube13" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, -5.20303)
+
+[node name="cube17" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, 9.08808)
+
+[node name="cube18" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, 4.39423)
+
+[node name="cube19" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, -0.425356)
+
+[node name="cube20" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.0794694, -1.07107, -5.20303)
+
+[node name="cube14" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 4.69681, -1.07107, -5.20303)
+
+[node name="cube15" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 9.20885, -1.07107, -5.20303)
+
+[node name="cube16" parent="." instance=ExtResource("1_88o7f")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 13.8608, -1.07107, -5.20303)

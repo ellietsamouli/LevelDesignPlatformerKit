@@ -5,3 +5,11 @@
 
 [node name="cube" instance=ExtResource("1_pjiy0")]
 script = ExtResource("2_hugjq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.028021, 0)
+polygon = PackedVector2Array(-0.48111, 1.00187, -0.503527, 0.0771787, 0.516439, 0.0883872, 0.499627, 1.02429)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" index="1"]
