@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://csfibprgjnu4v"]
+
+[ext_resource type="PackedScene" uid="uid://dbylqw3i7tx0i" path="res://models/props/block-grass-edge.glb" id="1_q3egs"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="block-grass-edge2" parent="." instance=ExtResource("1_q3egs")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.00964564, -1.92989, 0.0328293)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block-grass-edge2"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="block-grass-edge2/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="block-grass-edge2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.998345, 0, 0, 0.00922245)
+polygon = PackedVector2Array(-0.535291, 0.993983, -0.520877, -0.000591278, 0.502525, -0.00539601, 0.497721, 1.0132)
