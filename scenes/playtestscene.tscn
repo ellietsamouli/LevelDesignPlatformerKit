@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://cqyaf21kafek"]
+[gd_scene load_steps=49 format=3 uid="uid://cqyaf21kafek"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ao01u"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_tcqfi"]
@@ -30,7 +30,6 @@
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_qvm5p"]
 [ext_resource type="PackedScene" uid="uid://dhekvn36jkr03" path="res://objects/nonmovcloudfloor.tscn" id="26_qf5nv"]
 [ext_resource type="PackedScene" uid="uid://ctqjm0ifktkwd" path="res://ramp_tilted.tscn" id="26_snxhh"]
-[ext_resource type="PackedScene" uid="uid://cl1l60sih7qo0" path="res://models/props/spike-block-wide.glb" id="27_qtoa2"]
 [ext_resource type="PackedScene" uid="uid://b3iotqnkwu5eg" path="res://grassbridge.tscn" id="28_kmv36"]
 [ext_resource type="PackedScene" uid="uid://dj2cohvkba0m3" path="res://platformfancyC.tscn" id="31_gkf7u"]
 
@@ -723,7 +722,15 @@ transform = Transform3D(0.71866, 0, 0.695361, 0, 1, 0, -0.695361, 0, 0.71866, -1
 metadata/_edit_group_ = true
 
 [node name="spike-block-wide32" parent="World" instance=ExtResource("23_f2mjr")]
-transform = Transform3D(0.71866, 0, 0.695361, 0, 1, 0, -0.695361, 0, 0.71866, -124.142, 23.883, -70.8189)
+transform = Transform3D(0.999864, 0, -0.0164749, 0, 1, 0, 0.0164749, 0, 0.999864, -130.142, 23.883, -70.8189)
+metadata/_edit_group_ = true
+
+[node name="spike-block-wide33" parent="World" instance=ExtResource("23_f2mjr")]
+transform = Transform3D(0.999864, 0, -0.0164749, 0, 1, 0, 0.0164749, 0, 0.999864, -130.142, 23.883, -72.8189)
+metadata/_edit_group_ = true
+
+[node name="spike-block-wide34" parent="World" instance=ExtResource("23_f2mjr")]
+transform = Transform3D(0.999864, 0, -0.0164749, 0, 1, 0, 0.0164749, 0, 0.999864, -130.142, 23.883, -74.8189)
 metadata/_edit_group_ = true
 
 [node name="spike-block-wide19" parent="World" instance=ExtResource("23_f2mjr")]
@@ -821,30 +828,21 @@ transform = Transform3D(-8.74228e-08, -1.42401e-15, 3.65382, 0.275408, 1.98095, 
 [node name="RampTilted2" parent="World" instance=ExtResource("26_snxhh")]
 transform = Transform3D(-8.74228e-08, -1.42401e-15, 3.65382, 0.275408, 1.98095, 2.19931e-08, -1.98095, 0.275408, -1.58192e-07, -122.835, 24.668, -77.8565)
 
-[node name="spike-block-wide22" parent="World" instance=ExtResource("27_qtoa2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -123.054, 25.0662, -77.1275)
-
 [node name="moving_object_path10" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_4dt55")]
 curve = SubResource("Curve3D_tkqmd")
-object_to_move = NodePath("../spike-block-wide22")
+object_to_move = NodePath("../spike-block-wide32")
 movement_speed = 3.0
 ping_pong = true
-
-[node name="spike-block-wide29" parent="World" instance=ExtResource("27_qtoa2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -125.681, 24.4869, -76.2012)
 
 [node name="moving_object_path11" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_4dt55")]
 curve = SubResource("Curve3D_l7h5k")
-object_to_move = NodePath("../spike-block-wide29")
+object_to_move = NodePath("../spike-block-wide33")
 movement_speed = 3.0
 ping_pong = true
 
-[node name="spike-block-wide31" parent="World" instance=ExtResource("27_qtoa2")]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -125.637, 23.8753, -75.1777)
-
 [node name="moving_object_path12" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_4dt55")]
 curve = SubResource("Curve3D_40v0r")
-object_to_move = NodePath("../spike-block-wide31")
+object_to_move = NodePath("../spike-block-wide34")
 movement_speed = 3.0
 ping_pong = true
 
