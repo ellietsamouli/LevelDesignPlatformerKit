@@ -147,12 +147,12 @@ environment = ExtResource("1_ao01u")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_tcqfi")]
-transform = Transform3D(-0.0102973, 0, -0.999947, 0, 1, 0, 0.999947, 0, -0.0102973, -118.988, 23.8387, -71.5154)
+transform = Transform3D(-0.0102973, 0, -0.999947, 0, 1, 0, 0.999947, 0, -0.0102973, -3.18494, 1.08518, 2.55661)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
-transform = Transform3D(0.336931, -0.397907, 0.853315, -2.40487e-08, 0.906308, 0.422618, -0.94153, -0.142393, 0.305363, -121.815, 21.9694, -77.4937)
+transform = Transform3D(0.336931, -0.397907, 0.853315, -2.40487e-08, 0.906308, 0.422618, -0.94153, -0.142393, 0.305363, -6.01194, -0.784115, -3.42169)
 script = ExtResource("3_si28n")
 target = NodePath("../Player")
 
@@ -617,7 +617,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -107.919, 6.75509, 18.2188)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -119.728, 17.5276, -15.823)
 
 [node name="checkpoint6" parent="World" instance=ExtResource("15_oufrr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -145.657, 24.1769, -79.2994)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -117.75, 23.2487, -70.6695)
 
 [node name="cube14" parent="World" instance=ExtResource("19_yhqp0")]
 transform = Transform3D(1.56209, -1.37982, 1.71508, 1.97375, 1.80907, -0.342241, -0.974547, 1.4522, 2.05595, -107.609, 6.36527, 21.9741)
