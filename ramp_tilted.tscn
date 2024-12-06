@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctqjm0ifktkwd"]
+
+[ext_resource type="PackedScene" uid="uid://3yuxff1xl0x2" path="res://models/props/platform-ramp.glb" id="1_vt471"]
+
+[node name="RampTilted" type="Node3D"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+polygon = PackedVector2Array(-0.528415, 0.192446, -0.526507, 0.00736821, -0.469266, 0.00546023, 0.503821, 0.383247, 0.503821, 0.499636, 0.473293, 0.577864)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+
+[node name="platform-ramp2" parent="StaticBody3D/MeshInstance3D" instance=ExtResource("1_vt471")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
