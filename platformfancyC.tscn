@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj2cohvkba0m3"]
+
+[ext_resource type="PackedScene" uid="uid://wsp5wwgbk47a" path="res://platformfancy.tscn" id="1_pyo1p"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Platform" parent="." instance=ExtResource("1_pyo1p")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0.0165477, 0, 0.293438)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Platform"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Platform/StaticBody3D"]
+depth = 2.99
+polygon = PackedVector2Array(0.269729, 0.814109, 0.280815, -0.00623703, -2.72897, 0.0214773, -2.71788, 0.841823, -2.3964, 0.836281, -2.40194, 0.520337, -0.0406719, 0.525879, -0.0351292, 0.808566)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Platform/StaticBody3D"]

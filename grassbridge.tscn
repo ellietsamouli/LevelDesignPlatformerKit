@@ -13,5 +13,5 @@ transform = Transform3D(4, 0, 0, 0, 3.34596, 0, 0, 0, 4, 0.096439, 0, -0.08198)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0117554)
 
 [node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="block-grass-curve-low2/StaticBody3D"]
-transform = Transform3D(0.974831, 0, 0, 0, 1.03872, 0, 0, 0, 0.836122, 0, -0.0202286, 0.0474024)
+transform = Transform3D(0.974831, 0, 0, 0, 1.03872, 0, 0, 0, 0.836122, 0, -0.0202286, 0.019176)
 polygon = PackedVector2Array(0.0105391, 0.534574, -0.452248, 0.436942, -0.815218, 0.252526, -0.990654, 0.0536452, -1.01183, -0.00782691, 1.01476, -0.00421096, 0.799999, 0.234446, 0.564069, 0.39355, 0.316039, 0.487566)

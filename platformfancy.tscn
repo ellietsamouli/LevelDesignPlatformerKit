@@ -1,0 +1,66 @@
+[gd_scene load_steps=3 format=3 uid="uid://wsp5wwgbk47a"]
+
+[ext_resource type="PackedScene" uid="uid://02v51studkj5" path="res://models/props/block-moving-blue.glb" id="1_cs7pi"]
+[ext_resource type="PackedScene" uid="uid://bddgf7n531bdn" path="res://models/props/fence-low-straight.glb" id="3_ngwke"]
+
+[node name="Platform" type="Node3D"]
+
+[node name="block-moving-blue2" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.206739, 0, 1.0222)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue3" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.206739, 0, -0.0150596)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue4" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.206739, 0, -1.05067)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue8" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.20293, 0, 1.0222)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue9" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.20293, 0, -0.0150596)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue10" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.20293, 0, -1.05067)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue5" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19483, 0, 1.0222)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue6" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19483, 0, -0.0150596)
+metadata/_edit_group_ = true
+
+[node name="block-moving-blue7" parent="." instance=ExtResource("1_cs7pi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.19483, 0, -1.05067)
+metadata/_edit_group_ = true
+
+[node name="fence-low-straight2" parent="." instance=ExtResource("3_ngwke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.14871, 0.497543, 1.04927)
+metadata/_edit_group_ = true
+
+[node name="fence-low-straight3" parent="." instance=ExtResource("3_ngwke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.14871, 0.497543, 0.0659696)
+metadata/_edit_group_ = true
+
+[node name="fence-low-straight4" parent="." instance=ExtResource("3_ngwke")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.14871, 0.497543, -0.906651)
+metadata/_edit_group_ = true
+
+[node name="fence-low-straight5" parent="." instance=ExtResource("3_ngwke")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.278288, 0.497543, -0.991973)
+metadata/_edit_group_ = true
+
+[node name="fence-low-straight6" parent="." instance=ExtResource("3_ngwke")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.278288, 0.497543, -0.00867343)
+metadata/_edit_group_ = true
+
+[node name="fence-low-straight7" parent="." instance=ExtResource("3_ngwke")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.278288, 0.497543, 0.963947)
+metadata/_edit_group_ = true
