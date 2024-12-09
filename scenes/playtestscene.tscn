@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://cqyaf21kafek"]
+[gd_scene load_steps=50 format=3 uid="uid://cqyaf21kafek"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ao01u"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_tcqfi"]
@@ -100,6 +100,13 @@ _data = {
 }
 point_count = 2
 
+[sub_resource type="Curve3D" id="Curve3D_l8nyt"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -120.652, 21.1997, -90.3079, 0, 0, 0, 0, 0, 0, -120.652, 45.6059, -90.1088, 0, 0, 0, 0, 0, 0, -99.9149, 45.6059, -90.1537),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
+
 [sub_resource type="Curve3D" id="Curve3D_tkqmd"]
 _data = {
 "points": PackedVector3Array(0, 0, 0, 0, 0, 0, -117.87, 25.8425, -78.0355, 0, 0, 0, 0, 0, 0, -127.672, 25.8425, -78.0355),
@@ -147,12 +154,12 @@ environment = ExtResource("1_ao01u")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_tcqfi")]
-transform = Transform3D(-0.0102973, 0, -0.999947, 0, 1, 0, 0.999947, 0, -0.0102973, -3.18494, 1.08518, 2.55661)
+transform = Transform3D(-0.995361, 0, 0.0962107, 0, 1, 0, -0.0962107, 0, -0.995361, -122.402, 26.3704, -82.3836)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
-transform = Transform3D(0.336931, -0.397907, 0.853315, -2.40487e-08, 0.906308, 0.422618, -0.94153, -0.142393, 0.305363, -6.01194, -0.784115, -3.42169)
+transform = Transform3D(0.909084, 0.176069, -0.37758, -3.80786e-08, 0.906308, 0.422618, 0.416614, -0.384195, 0.823909, -116.202, 24.5012, -84.6863)
 script = ExtResource("3_si28n")
 target = NodePath("../Player")
 
@@ -850,7 +857,13 @@ is_on_from_start = false
 ping_pong = true
 
 [node name="Node3D24" parent="World" instance=ExtResource("31_gkf7u")]
-transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -115.421, 20.7628, -65.6514)
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -99.9149, 45.6059, -90.1537)
+
+[node name="moving_object_path13" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_4dt55")]
+curve = SubResource("Curve3D_l8nyt")
+object_to_move = NodePath("../Node3D24")
+movement_speed = 3.0
+ping_pong = true
 
 [node name="RampTilted" parent="World" instance=ExtResource("26_snxhh")]
 transform = Transform3D(-8.74228e-08, -1.42401e-15, 3.65382, 0.275408, 1.98095, 2.19931e-08, -1.98095, 0.275408, -1.58192e-07, -122.811, 23.6114, -75.9355)
