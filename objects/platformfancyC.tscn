@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dj2cohvkba0m3"]
 
-[ext_resource type="PackedScene" uid="uid://wsp5wwgbk47a" path="res://platformfancy.tscn" id="1_pyo1p"]
+[ext_resource type="PackedScene" uid="uid://wsp5wwgbk47a" path="res://objects/platformfancy.tscn" id="1_pyo1p"]
 
 [node name="Node3D" type="Node3D"]
 

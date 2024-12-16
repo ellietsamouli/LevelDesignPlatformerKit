@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://cqyaf21kafek"]
+[gd_scene load_steps=63 format=3 uid="uid://cqyaf21kafek"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_ao01u"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_tcqfi"]
@@ -23,18 +23,19 @@
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="20_d5mna"]
 [ext_resource type="PackedScene" uid="uid://h4vu3u8utsjs" path="res://objects/nonmovingcloud.tscn" id="20_k4ckt"]
 [ext_resource type="LabelSettings" uid="uid://daohhjonjrdx8" path="res://themes/label_settings.tres" id="21_cls8t"]
-[ext_resource type="PackedScene" uid="uid://csfibprgjnu4v" path="res://smallgrassquare.tscn" id="21_fsy7q"]
+[ext_resource type="PackedScene" uid="uid://csfibprgjnu4v" path="res://objects/smallgrassquare.tscn" id="21_fsy7q"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="22_c5qgw"]
 [ext_resource type="PackedScene" uid="uid://dpo3dr26b06w3" path="res://objects/spike_block_wide.tscn" id="23_f2mjr"]
 [ext_resource type="Theme" uid="uid://d3avl0mr4r87l" path="res://themes/default_theme.tres" id="23_rmp0y"]
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_qvm5p"]
 [ext_resource type="PackedScene" uid="uid://dhekvn36jkr03" path="res://objects/nonmovcloudfloor.tscn" id="26_qf5nv"]
-[ext_resource type="PackedScene" uid="uid://ctqjm0ifktkwd" path="res://ramp_tilted.tscn" id="26_snxhh"]
+[ext_resource type="PackedScene" uid="uid://ctqjm0ifktkwd" path="res://objects/ramp_tilted.tscn" id="26_snxhh"]
 [ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="27_v455s"]
-[ext_resource type="PackedScene" uid="uid://dj2cohvkba0m3" path="res://platformfancyC.tscn" id="28_cf1hm"]
+[ext_resource type="PackedScene" uid="uid://dj2cohvkba0m3" path="res://objects/platformfancyC.tscn" id="28_cf1hm"]
 [ext_resource type="PackedScene" uid="uid://b3iotqnkwu5eg" path="res://grassbridge.tscn" id="28_kmv36"]
 [ext_resource type="PackedScene" uid="uid://bprrlrsrodjse" path="res://objects/saw.tscn" id="32_umtw6"]
-[ext_resource type="PackedScene" uid="uid://d1lf4lmgaq1kc" path="res://polygongrass.tscn" id="33_1fpof"]
+[ext_resource type="PackedScene" uid="uid://d1lf4lmgaq1kc" path="res://objects/polygongrass.tscn" id="33_1fpof"]
+[ext_resource type="PackedScene" uid="uid://dilljre5y5kmk" path="res://fence_round.tscn" id="36_t6el2"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -220,12 +221,12 @@ environment = ExtResource("1_ao01u")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_tcqfi")]
-transform = Transform3D(-0.9807, 0, 0.195518, 0, 1, 0, -0.195518, 0, -0.9807, -95.6718, 36.188, -159.065)
+transform = Transform3D(-0.9807, 0, 0.195518, 0, 1, 0, -0.195518, 0, -0.9807, -95.6718, 52.1415, -125.982)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
-transform = Transform3D(0.862735, 0.213701, -0.458281, -5.03283e-08, 0.906308, 0.422618, 0.505658, -0.364607, 0.781903, -115.996, 28.3671, -106.639)
+transform = Transform3D(0.862735, 0.213701, -0.458281, -5.03283e-08, 0.906308, 0.422618, 0.505658, -0.364607, 0.781903, -115.996, 44.3206, -73.5555)
 script = ExtResource("3_si28n")
 target = NodePath("../Player")
 
@@ -465,6 +466,190 @@ target = NodePath("../moving_object_path13")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -125.948, 29.8668, -112.932)
 target = NodePath("../moving_object_path20")
 
+[node name="button17" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -89.4628, 50.595, -124.37)
+target = NodePath("")
+
+[node name="button20" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -78.9142, 50.595, -123.166)
+target = NodePath("")
+
+[node name="button21" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -85.1528, 50.595, -130.562)
+target = NodePath("")
+
+[node name="button22" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -67.2267, 50.595, -130.562)
+target = NodePath("")
+
+[node name="button58" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -91.8626, 50.595, -132.743)
+target = NodePath("")
+
+[node name="button59" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -50.8526, 50.595, -126.361)
+target = NodePath("")
+
+[node name="button60" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -63.4577, 50.595, -134.34)
+target = NodePath("")
+
+[node name="button61" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -63.4577, 50.595, -127.493)
+target = NodePath("")
+
+[node name="button62" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("12_6e2i7")]
+transform = Transform3D(2.56471, 0, -1.55636, 0, 3, 0, 1.55636, 0, 2.56471, -71.6161, 50.595, -125.979)
+target = NodePath("../door7")
+
+[node name="button23" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -67.2267, 50.595, -122.902)
+target = NodePath("")
+
+[node name="button24" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -58.6401, 50.595, -122.902)
+target = NodePath("")
+
+[node name="button52" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -53.9013, 50.595, -122.902)
+target = NodePath("")
+
+[node name="button53" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -56.7376, 50.595, -129.914)
+target = NodePath("")
+
+[node name="button54" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("12_6e2i7")]
+transform = Transform3D(2.53509, 0, 1.60416, 0, 3, 0, -1.60416, 0, 2.53509, -59.5393, 50.595, -118.342)
+target = NodePath("../door4")
+
+[node name="button25" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -58.6401, 50.595, -113.284)
+target = NodePath("")
+
+[node name="button57" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -51.9658, 50.595, -111.063)
+target = NodePath("")
+
+[node name="button26" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -76.1306, 50.595, -128.429)
+target = NodePath("")
+
+[node name="button27" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -69.9914, 50.595, -138.019)
+target = NodePath("")
+
+[node name="button55" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -79.8964, 50.595, -134.592)
+target = NodePath("")
+
+[node name="button56" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -83.269, 50.595, -126.096)
+target = NodePath("")
+
+[node name="button28" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -62.4202, 50.595, -108.943)
+target = NodePath("")
+
+[node name="button29" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -62.4202, 50.595, -99.8482)
+target = NodePath("")
+
+[node name="button30" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("12_6e2i7")]
+transform = Transform3D(2.40495, 0, 1.79338, 0, 3, 0, -1.79338, 0, 2.40495, -55.9018, 50.595, -92.9566)
+target = NodePath("../door6")
+
+[node name="button31" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -55.9018, 50.595, -100.545)
+target = NodePath("")
+
+[node name="button32" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -54.524, 50.595, -107.77)
+target = NodePath("")
+
+[node name="button33" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -50.7874, 50.595, -116.233)
+target = NodePath("")
+
+[node name="button34" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -50.7874, 50.595, -102.044)
+target = NodePath("")
+
+[node name="button35" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -66.9287, 50.595, -96.4756)
+target = NodePath("")
+
+[node name="button36" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -63.9698, 50.595, -91.4572)
+target = NodePath("")
+
+[node name="button37" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -66.6681, 50.595, -86.1826)
+target = NodePath("")
+
+[node name="button38" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -74.4266, 50.595, -82.7381)
+target = NodePath("")
+
+[node name="button51" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -82.528, 50.595, -82.7381)
+target = NodePath("")
+
+[node name="button39" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -74.4266, 50.595, -91.1519)
+target = NodePath("")
+
+[node name="button40" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -80.1968, 50.595, -91.1519)
+target = NodePath("")
+
+[node name="button41" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -92.5935, 50.595, -94.6803)
+target = NodePath("")
+
+[node name="button42" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -88.4823, 50.595, -87.4106)
+target = NodePath("")
+
+[node name="button43" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -98.8457, 50.595, -97.1763)
+target = NodePath("")
+
+[node name="button44" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -98.8457, 50.595, -105.054)
+target = NodePath("")
+
+[node name="button45" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -91.9042, 50.595, -105.054)
+target = NodePath("")
+
+[node name="button46" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0.00382227, 0, 3, 0, -0.00382227, 0, 3, -89.151, 50.595, -100.644)
+target = NodePath("")
+
+[node name="button47" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -95.7732, 50.595, -110.907)
+target = NodePath("")
+
+[node name="button48" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -99.1538, 50.595, -116.092)
+target = NodePath("")
+
+[node name="button49" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -99.1538, 50.595, -122.547)
+target = NodePath("")
+
+[node name="button19" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -89.4628, 50.595, -117.365)
+target = NodePath("")
+
+[node name="button50" parent="World" instance=ExtResource("12_6e2i7")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -89.4628, 50.595, -117.365)
+target = NodePath("")
+
+[node name="button18" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("12_6e2i7")]
+transform = Transform3D(2.70323, 0, 1.30098, 0, 3, 0, -1.30098, 0, 2.70323, -91.01, 50.595, -112.932)
+target = NodePath("../door3")
+
 [node name="button13" parent="World" node_paths=PackedStringArray("target") instance=ExtResource("12_6e2i7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -116.872, 29.8668, -104.935)
 target = NodePath("../moving_object_path19")
@@ -681,7 +866,7 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -49.3207, -1.78319, 3.4786
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -115.559, 9.90711, -16.149)
 
 [node name="flag2" parent="World" instance=ExtResource("7_6ri33")]
-transform = Transform3D(7.07107, 0, -7.07107, 0, 10, 0, 7.07107, 0, 7.07107, -72.0951, 50.2679, -97.8135)
+transform = Transform3D(7.07107, 0, -7.07107, 0, 10, 0, 7.07107, 0, 7.07107, -75.5541, 50.2679, -107.335)
 
 [node name="GrassSquare14" parent="World" instance=ExtResource("14_s02wx")]
 transform = Transform3D(51.0393, 0, 0, 0, 51.0393, 0, 0, 0, 51.0393, -103.986, 0.3585, 52.2036)
@@ -793,7 +978,23 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -107.3
 look_at_door_when_opens = true
 
 [node name="door2" parent="World" instance=ExtResource("18_nggy7")]
-transform = Transform3D(2, 0, 1.06581e-14, 0, 2, 0, -2.13163e-14, 0, 1, -118.396, 7.24857, 9.40724)
+transform = Transform3D(2, 0, 1.06581e-14, 0, 2, 0, -2.13163e-14, 0, 1, -118.012, 7.24857, 9.40724)
+look_at_door_when_opens = true
+
+[node name="door3" parent="World" instance=ExtResource("18_nggy7")]
+transform = Transform3D(-8.74228e-08, 0, -1, 0, 2, 0, 2, 0, -4.37114e-08, -85.148, 50.7031, -107.1)
+look_at_door_when_opens = true
+
+[node name="door4" parent="World" instance=ExtResource("18_nggy7")]
+transform = Transform3D(-8.74228e-08, 0, -1, 0, 2, 0, 2, 0, -4.37114e-08, -65.7457, 50.7031, -107.355)
+look_at_door_when_opens = true
+
+[node name="door6" parent="World" instance=ExtResource("18_nggy7")]
+transform = Transform3D(-2, 0, 8.74228e-08, 0, 2, 0, -1.74846e-07, 0, -1, -75.8396, 50.7031, -97.4046)
+look_at_door_when_opens = true
+
+[node name="door7" parent="World" instance=ExtResource("18_nggy7")]
+transform = Transform3D(-2, 0, 8.74228e-08, 0, 2, 0, -1.74846e-07, 0, -1, -75.8396, 50.7031, -117.246)
 look_at_door_when_opens = true
 
 [node name="checkpoint2" parent="World" instance=ExtResource("15_oufrr")]
@@ -1267,6 +1468,18 @@ transform = Transform3D(58.3076, 0, 0, 0, 40.0675, 0, 0, 0, 59.7252, -84.8052, 6
 [node name="Polygongrass2" parent="." instance=ExtResource("33_1fpof")]
 transform = Transform3D(16.4948, 0, 11.3103, 0, 20, 0, -11.3103, 0, 16.4948, -91.272, 13.4343, -161.792)
 
+[node name="FenceRound" parent="." instance=ExtResource("36_t6el2")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -81.5852, 50.8811, -101.129)
+
+[node name="FenceRound3" parent="." instance=ExtResource("36_t6el2")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, -69.5852, 50.8811, -101.129)
+
+[node name="FenceRound2" parent="." instance=ExtResource("36_t6el2")]
+transform = Transform3D(0.277661, 0, -7.99518, 0, 8, 0, 7.99518, 0, 0.277661, -81.5824, 50.8811, -113.401)
+
+[node name="FenceRound4" parent="." instance=ExtResource("36_t6el2")]
+transform = Transform3D(-7.99518, 0, -0.277661, 0, 8, 0, 0.277661, 0, -7.99518, -69.5824, 50.8811, -113.401)
+
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582563, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 0, 0)
 light_color = Color(0.756863, 0.603922, 0.596078, 1)
@@ -1384,18 +1597,6 @@ text = "TIME"
 label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="coin" parent="." instance=ExtResource("13_lyl3n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -99.1815, 50.8811, -113.712)
-
-[node name="coin2" parent="." instance=ExtResource("13_lyl3n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -95.8993, 50.8811, -113.712)
-
-[node name="coin3" parent="." instance=ExtResource("13_lyl3n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -92.6681, 50.8811, -113.712)
-
-[node name="coin4" parent="." instance=ExtResource("13_lyl3n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.2158, 50.8811, -113.712)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]

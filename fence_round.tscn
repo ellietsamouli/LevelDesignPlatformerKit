@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dilljre5y5kmk"]
+
+[ext_resource type="PackedScene" uid="uid://7orjqql4d2cd" path="res://models/props/fence-corner-curved.glb" id="1_3up27"]
+
+[node name="FenceRound" type="Node3D"]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.180123, 0)
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.29742)
+depth = 0.275
+polygon = PackedVector2Array(-0.462139, 0.518324, -0.488097, 0.476791, -0.441372, 0.201633, -0.314176, -0.063142, -0.088339, -0.301959, 0.186819, -0.442134, 0.519086, -0.496646, 0.513894, -0.43175, 0.467169, -0.436942, 0.464573, -0.3383, 0.36074, -0.346088, 0.365932, -0.426559, 0.176436, -0.374642, -0.0390182, -0.268213, -0.251877, -0.0449712, -0.35571, 0.154908, -0.420606, 0.349595, -0.327156, 0.347, -0.340135, 0.456024, -0.430989, 0.45862)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/CollisionPolygon3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+
+[node name="fence-corner-curved2" parent="StaticBody3D/MeshInstance3D" instance=ExtResource("1_3up27")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.0187597, 0, 0.0712378)
