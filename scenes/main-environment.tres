@@ -1,21 +1,20 @@
 [gd_resource type="Environment" load_steps=3 format=3 uid="uid://bqnqgflivjvue"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_lg8b7"]
-sky_horizon_color = Color(0.67451, 0.682353, 0.698039, 1)
-sky_curve = 0.0175
-ground_bottom_color = Color(1, 1, 1, 1)
-ground_curve = 0.171484
+[sub_resource type="PhysicalSkyMaterial" id="PhysicalSkyMaterial_m45ur"]
+turbidity = 0.0
+sun_disk_scale = 0.0
 
-[sub_resource type="Sky" id="Sky_7bk1c"]
-sky_material = SubResource("ProceduralSkyMaterial_lg8b7")
+[sub_resource type="Sky" id="Sky_sw0ge"]
+sky_material = SubResource("PhysicalSkyMaterial_m45ur")
 
 [resource]
 background_mode = 1
-background_color = Color(0.752941, 0.776471, 0.827451, 1)
-sky = SubResource("Sky_7bk1c")
+background_color = Color(0.646575, 0.785245, 0.985042, 1)
+sky = SubResource("Sky_sw0ge")
 ambient_light_source = 2
-ambient_light_color = Color(0.662745, 0.694118, 0.772549, 1)
+ambient_light_color = Color(0.844703, 0.267418, 0, 1)
 ambient_light_energy = 1.15
+reflected_light_source = 2
 tonemap_mode = 2
 ssao_enabled = true
 ssao_radius = 0.45

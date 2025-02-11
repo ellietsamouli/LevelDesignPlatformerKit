@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo8g1uekmaujr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_56hua"]
+albedo_color = Color(0.0917794, 0.368024, 0, 1)
+
+[node name="Poppy" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.27247, -0.0335298)
+height = 6.84125
+material = SubResource("StandardMaterial3D_56hua")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+transform = Transform3D(0.40867, 0, 0, 0, 1, 0, 0, 0, 1, 0.0917612, 2.48104, -0.0258947)
+polygon = PackedVector2Array(1.04246, 4.2393, -1.31957, 4.23759, -1.24423, -2.71596, 1.03306, -2.64649)
