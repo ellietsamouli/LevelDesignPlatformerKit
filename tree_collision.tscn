@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bywkgskxapcho"]
+
+[ext_resource type="PackedScene" uid="uid://dlst3fxcqusuq" path="res://models/props/tree.glb" id="1_kaqpc"]
+
+[node name="Tree_Collision" type="Node3D"]
+
+[node name="tree2" parent="." instance=ExtResource("1_kaqpc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0597061, 0, 0.0911827)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tree2"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="tree2/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="tree2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0108835)
+depth = 0.155
+polygon = PackedVector2Array(-0.410153, 1.86819, -0.4843, 1.58396, -0.488419, 1.32445, -0.451346, 1.02374, -0.393676, 0.830137, -0.117686, 0.801302, -0.121805, 0.681843, -0.220667, 0.673605, -0.220667, 0.545908, -0.117686, 0.537669, -0.183594, 0.25344, -0.298933, 0.0104041, 0.314837, 0.0145234, 0.18302, 0.236963, 0.24069, 0.269917, 0.236571, 0.426449, 0.100635, 0.447046, 0.0882773, 0.817779, 0.273644, 0.826017, 0.388983, 0.871329, 0.471368, 1.07729, 0.483726, 1.49334, 0.426057, 1.83936)

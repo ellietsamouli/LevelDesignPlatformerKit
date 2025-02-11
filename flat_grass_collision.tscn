@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://v8s1b1rp8epk"]
+
+[ext_resource type="PackedScene" uid="uid://c4ma382ma67ti" path="res://models/props/block-grass-overhang-low-large.glb" id="1_qes8f"]
+
+[node name="Flat_Grass_Collision" type="Node3D"]
+
+[node name="block-grass-overhang-low-large2" parent="." instance=ExtResource("1_qes8f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0632677, 0, -0.0135112)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block-grass-overhang-low-large2"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="block-grass-overhang-low-large2/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="block-grass-overhang-low-large2/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0878055, 0.0181667, -0.0203186)
+depth = 2.185
+polygon = PackedVector2Array(-1.09741, 0.00349528, -1.10347, 0.478857, 0.913034, 0.484912, 0.916062, -0.005588)
