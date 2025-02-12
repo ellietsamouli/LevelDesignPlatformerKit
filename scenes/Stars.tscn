@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://bfjw171ab6wlf"]
+[gd_scene load_steps=29 format=3 uid="uid://bfjw171ab6wlf"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_272bv"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_xm32s"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://ctfjj2573fbex" path="res://models/props/plant.glb" id="22_gyrw8"]
 [ext_resource type="Theme" uid="uid://d3avl0mr4r87l" path="res://themes/default_theme.tres" id="23_08u74"]
 [ext_resource type="PackedScene" uid="uid://ytqajrdi7fqj" path="res://objects/trampoline.tscn" id="23_11ahc"]
+[ext_resource type="PackedScene" uid="uid://dtjvjdjl8cs6e" path="res://models/core_models/flag.glb" id="24_b635j"]
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_c60ot"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
@@ -262,7 +263,7 @@ transform = Transform3D(-12, 0, 1.04907e-06, 0, 28.9397, 0, -1.04907e-06, 0, -12
 transform = Transform3D(2.58256, 0, 0, 0, 1.14455, 0, 0, 0, 2.58256, -28.742, 2.35387, 18.0891)
 
 [node name="Poppy2" parent="." instance=ExtResource("20_75q0v")]
-transform = Transform3D(0.5, 0, 0, 0, 0.607213, 0, 0, 0, 0.5, -19.4605, 2.35387, 18.0891)
+transform = Transform3D(1.14739, 0, -1.03645, 0, 2.48558, 0, 1.03645, 0, 1.14739, -30.9642, 3.81912, -1.23295)
 
 [node name="Poppy3" parent="." instance=ExtResource("20_75q0v")]
 transform = Transform3D(0.293294, 0, -0.063075, 0, 1, 0, 0.063075, 0, 0.293294, -19.4539, 2.35387, 12.6352)
@@ -277,7 +278,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.7125, 3.14362, 15.3193)
 transform = Transform3D(0.977648, 0, -0.21025, 0, 1, 0, 0.21025, 0, 0.977648, -19.3965, 8.76847, 12.7035)
 
 [node name="Poppy4" parent="." instance=ExtResource("20_75q0v")]
-transform = Transform3D(0.29768, 0, 0.0372363, 0, 1, 0, -0.0372363, 0, 0.29768, -15.6444, 2.35387, 12.3808)
+transform = Transform3D(0.29768, 0, 0.0372363, 0, 1, 0, -0.0372363, 0, 0.29768, 3.7149, 2.35387, 17.8416)
 
 [node name="platform-falling7" parent="." instance=ExtResource("15_kgsyh")]
 transform = Transform3D(0.992267, 0, 0.124121, 0, 1, 0, -0.124121, 0, 0.992267, -15.5677, 8.76847, 18.3263)
@@ -289,10 +290,10 @@ transform = Transform3D(0.291327, 0, -0.071616, 0.00766986, 0.994249, 0.0312002,
 transform = Transform3D(0.971088, 0, -0.23872, 0.0255662, 0.994249, 0.104001, 0.237347, -0.107097, 0.965503, -12.3263, 8.51405, 12.5842)
 
 [node name="Poppy6" parent="." instance=ExtResource("20_75q0v")]
-transform = Transform3D(0.3, 0, 0, 0, 0.994979, -0.0300252, 0, 0.100084, 0.298494, -8.541, -1.0063, 12.3199)
+transform = Transform3D(0.3, 0, 0, 0, 0.994979, -0.0300252, 0, 0.100084, 0.298494, 0.115919, -1.0063, 17.6685)
 
 [node name="platform-falling9" parent="." instance=ExtResource("15_kgsyh")]
-transform = Transform3D(1, 0, 0, 0, 0.994979, -0.100084, 0, 0.100084, 0.994979, -8.47048, 5.37062, 13.0164)
+transform = Transform3D(1, 0, 0, 0, 0.994979, -0.100084, 0, 0.100084, 0.994979, 0.18644, 5.37062, 18.365)
 
 [node name="platform-falling2" parent="." instance=ExtResource("15_kgsyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2477, 4.47496, 17.4068)
@@ -307,10 +308,10 @@ transform = Transform3D(0.959481, 0, 0.281772, 0, 1, 0, -0.281772, 0, 0.959481, 
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -20.085, 2.37585, 14.3932)
 
 [node name="platform" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(0.568847, 0, -0.168554, 0, 0.593293, 0, 0.168554, 0, 0.568847, -19.2485, 6.19462, 17.5733)
+transform = Transform3D(0.955977, 0, -1.56596, 0, 2.4286, 0, 1.56596, 0, 0.955977, -29.4085, 19.5409, -1.97714)
 
 [node name="platform2" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(0.367113, 0.1, 0.607618, -0.098181, 0.583882, -0.0833366, -0.62759, -0.0328475, 0.368468, -20.2512, 6.35645, 18.612)
+transform = Transform3D(2.00968, 0.392946, 0.596472, -0.284676, 2.38434, -0.243784, -0.636821, 0.174195, 1.99133, -33.8626, 20.2034, -1.67206)
 
 [node name="platform5" parent="." instance=ExtResource("13_nltfc")]
 transform = Transform3D(13.5806, 0, 0, 0, 4.94648, 0, 0, 0, 12.126, 5.91323, 0.7838, 32.2419)
@@ -325,16 +326,20 @@ transform = Transform3D(13.5806, 0, 0, 0, 4.94648, 0, 0, 0, 12.126, -26.2694, 0.
 transform = Transform3D(13.5806, 0, 0, 0, 4.94648, 0, 0, 0, 12.126, 4.97852, 0.7838, 0.5114)
 
 [node name="platform3" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(0.702058, 0.143922, 0.114227, -0.17555, 0.575572, -0.0285625, -0.120738, 0, 0.705726, -18.6906, 6.04373, 18.8357)
+transform = Transform3D(1.64784, 0.435187, -1.179, -0.480603, 2.34533, -0.0867245, 1.04309, 0.393111, 1.82259, -30.7451, 18.9233, 2.07625)
 
 [node name="platform4" parent="." instance=ExtResource("13_nltfc")]
 transform = Transform3D(1.92016, 0, 0, 0, 1.92016, 0, 0, 0, 1.92016, -23.9112, 8.63485, 12.7475)
 
 [node name="plant2" parent="." instance=ExtResource("22_gyrw8")]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -28.7081, 9.83095, 18.0752)
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -28.7081, 10.5152, 18.0752)
 
 [node name="trampoline" parent="." instance=ExtResource("23_11ahc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4395, 9.10326, 12.4491)
+transform = Transform3D(1.78454, 0, 0, 0, 1, 0, 0, 0, 1.80328, 3.91981, 9.10326, 17.9099)
+trampoline_strength = 20.0
+
+[node name="flag" parent="." instance=ExtResource("24_b635j")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -45.0765, 22.5548, -1.72037)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
