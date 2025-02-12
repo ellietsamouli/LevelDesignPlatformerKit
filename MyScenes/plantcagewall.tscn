@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbp5enouabor6"]
+
+[ext_resource type="PackedScene" uid="uid://h5nay2aatark" path="res://models/prototyping/models/indicator-square-d.glb" id="1_3ol6v"]
+
+[node name="Plantcagewall" type="Node3D"]
+
+[node name="indicator-square-d2" parent="." instance=ExtResource("1_3ol6v")]
+transform = Transform3D(24.2, 0, 0, 0, 15.11, 0, 0, 0, 24, -0.0141618, 0, 0.139069)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="indicator-square-d2"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="indicator-square-d2/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="indicator-square-d2/StaticBody3D"]
+transform = Transform3D(-0.999997, -1.75701e-10, -0.00253074, 1.75701e-10, 1, -1.38858e-07, 0.00253076, -1.38858e-07, -0.999997, 0.000277551, 0.00147591, 0.498058)
+depth = 0.01
+polygon = PackedVector2Array(0.500181, 0.206313, 0.500181, 0.0131272, -0.511182, -0.00544844, -0.504223, 0.210028)
+
+[node name="CollisionPolygon3D2" type="CollisionPolygon3D" parent="indicator-square-d2/StaticBody3D"]
+transform = Transform3D(-0.999997, -1.75701e-10, -0.00253074, 1.75701e-10, 1, -1.38858e-07, 0.00253076, -1.38858e-07, -0.999997, 0.000277551, 0.00147591, -0.496411)
+depth = 0.01
+polygon = PackedVector2Array(0.500181, 0.206313, 0.500181, 0.0131272, -0.511182, -0.00544844, -0.504223, 0.210028)
+
+[node name="CollisionPolygon3D3" type="CollisionPolygon3D" parent="indicator-square-d2/StaticBody3D"]
+transform = Transform3D(-0.00253072, 1.38858e-07, 0.999997, 1.75701e-10, 1, -1.38858e-07, -0.999997, -1.75705e-10, -0.0025307, -0.499845, 0.00147591, -0.00932099)
+depth = 0.01
+polygon = PackedVector2Array(0.500181, 0.206313, 0.500181, 0.0131272, -0.511182, -0.00544844, -0.504223, 0.210028)
+
+[node name="CollisionPolygon3D4" type="CollisionPolygon3D" parent="indicator-square-d2/StaticBody3D"]
+transform = Transform3D(-0.00253072, 1.38858e-07, 0.999997, 1.75701e-10, 1, -1.38858e-07, -0.999997, -1.75705e-10, -0.0025307, 0.489704, 0.00147591, -0.00932099)
+depth = 0.01
+polygon = PackedVector2Array(0.500181, 0.206313, 0.500181, 0.0131272, -0.511182, -0.00544844, -0.504223, 0.210028)

@@ -32,10 +32,10 @@
 [ext_resource type="PackedScene" uid="uid://ctqjm0ifktkwd" path="res://objects/ramp_tilted.tscn" id="26_snxhh"]
 [ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="27_v455s"]
 [ext_resource type="PackedScene" uid="uid://dj2cohvkba0m3" path="res://objects/platformfancyC.tscn" id="28_cf1hm"]
-[ext_resource type="PackedScene" uid="uid://b3iotqnkwu5eg" path="res://grassbridge.tscn" id="28_kmv36"]
+[ext_resource type="PackedScene" uid="uid://b3iotqnkwu5eg" path="res://MyScenes/grassbridge.tscn" id="28_kmv36"]
 [ext_resource type="PackedScene" uid="uid://bprrlrsrodjse" path="res://objects/saw.tscn" id="32_umtw6"]
 [ext_resource type="PackedScene" uid="uid://d1lf4lmgaq1kc" path="res://objects/polygongrass.tscn" id="33_1fpof"]
-[ext_resource type="PackedScene" uid="uid://dilljre5y5kmk" path="res://fence_round.tscn" id="36_t6el2"]
+[ext_resource type="PackedScene" uid="uid://dilljre5y5kmk" path="res://MyScenes/fence_round.tscn" id="36_t6el2"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75

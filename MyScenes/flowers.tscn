@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpk3udu7elp2"]
+
+[ext_resource type="Script" path="res://MyScenes/flowers.gd" id="1_ee5qs"]
+[ext_resource type="PackedScene" uid="uid://crjxc823ldoc3" path="res://models/props/flowers.glb" id="1_h3rk0"]
+
+[node name="Flowers" type="Node3D"]
+script = ExtResource("1_ee5qs")
+
+[node name="flowers" parent="." instance=ExtResource("1_h3rk0")]
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, -0.104718, 0, 0.119855)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="flowers"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="flowers/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="flowers/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0462445, 0, -0.10394)
+depth = 0.335
+polygon = PackedVector2Array(-0.433802, 0.148575, -0.41405, 0.0278634, -0.173724, -0.00505789, -0.101297, 0.0607847, -0.134218, 0.154062)
+
+[node name="CollisionPolygon3D2" type="CollisionPolygon3D" parent="flowers/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.484713, 0, -0.209227)
+depth = 0.295
+polygon = PackedVector2Array(-0.433802, 0.148575, -0.41405, 0.0278634, -0.173724, -0.00505789, -0.101297, 0.0607847, -0.134218, 0.154062)
+
+[node name="CollisionPolygon3D3" type="CollisionPolygon3D" parent="flowers/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.364926, 0, 0.22566)
+depth = 0.295
+polygon = PackedVector2Array(-0.433802, 0.148575, -0.41405, 0.0278634, -0.173724, -0.00505789, -0.101297, 0.0607847, -0.134218, 0.154062)
