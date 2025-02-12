@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bfjw171ab6wlf"]
+[gd_scene load_steps=28 format=3 uid="uid://bfjw171ab6wlf"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_272bv"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_xm32s"]
@@ -21,6 +21,7 @@
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="22_0s8k8"]
 [ext_resource type="PackedScene" uid="uid://ctfjj2573fbex" path="res://models/props/plant.glb" id="22_gyrw8"]
 [ext_resource type="Theme" uid="uid://d3avl0mr4r87l" path="res://themes/default_theme.tres" id="23_08u74"]
+[ext_resource type="PackedScene" uid="uid://ytqajrdi7fqj" path="res://objects/trampoline.tscn" id="23_11ahc"]
 [ext_resource type="Texture2D" uid="uid://dm50aa4qogm65" path="res://sprites/button_rectangle_depth_gloss.png" id="24_c60ot"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
@@ -279,7 +280,7 @@ transform = Transform3D(0.977648, 0, -0.21025, 0, 1, 0, 0.21025, 0, 0.977648, -1
 transform = Transform3D(0.29768, 0, 0.0372363, 0, 1, 0, -0.0372363, 0, 0.29768, -15.6444, 2.35387, 12.3808)
 
 [node name="platform-falling7" parent="." instance=ExtResource("15_kgsyh")]
-transform = Transform3D(0.992267, 0, 0.124121, 0, 1, 0, -0.124121, 0, 0.992267, -15.5677, 8.76847, 12.4264)
+transform = Transform3D(0.992267, 0, 0.124121, 0, 1, 0, -0.124121, 0, 0.992267, -15.5677, 8.76847, 18.3263)
 
 [node name="Poppy5" parent="." instance=ExtResource("20_75q0v")]
 transform = Transform3D(0.291327, 0, -0.071616, 0.00766986, 0.994249, 0.0312002, 0.0712041, -0.107097, 0.289651, -12.3817, 2.12883, 13.2015)
@@ -331,6 +332,9 @@ transform = Transform3D(1.92016, 0, 0, 0, 1.92016, 0, 0, 0, 1.92016, -23.9112, 8
 
 [node name="plant2" parent="." instance=ExtResource("22_gyrw8")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -28.7081, 9.83095, 18.0752)
+
+[node name="trampoline" parent="." instance=ExtResource("23_11ahc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.4395, 9.10326, 12.4491)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]

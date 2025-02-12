@@ -165,3 +165,6 @@ func player_died() -> void:
 func reached_checkpoint(checkpoint_pos : Vector3) -> void:
 	latest_checkpoint = checkpoint_pos
 	
+func bounce_player(bounce_strength : float) -> void:
+	gravity = -bounce_strength
+	jump_double = true;
