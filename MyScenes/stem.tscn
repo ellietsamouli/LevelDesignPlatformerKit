@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bs5mc7nlmg1ks"]
+
+[ext_resource type="PackedScene" uid="uid://ctfjj2573fbex" path="res://models/props/plant.glb" id="1_yxslu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_56hua"]
+albedo_color = Color(0.265384, 0.106708, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elfs6"]
+albedo_color = Color(0, 0.545098, 0.603922, 1)
+
+[node name="Poppy" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.46183, -0.0335298)
+radius = 0.175
+height = 5.0
+sides = 20
+material = SubResource("StandardMaterial3D_56hua")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.38419e-07, -0.0476651, 0.0107851)
+depth = 0.455
+polygon = PackedVector2Array(0.180875, 0.0119461, -0.140689, -0.00879985, -0.182302, 4.98622, 0.184619, 4.95799)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1.34389, 0.559152, 0, -0.8918, 0.842612, 0, 0, 0, 1.38113, 0.398268, 4.84413, 0)
+radial_segments = 6
+material = SubResource("StandardMaterial3D_elfs6")
+
+[node name="plant2" parent="." instance=ExtResource("1_yxslu")]
+transform = Transform3D(-0.963325, 2.58338, 1.18243, -1.1187, -1.49259, 2.34961, 2.61161, 0.313553, 1.44263, 1.05024, 4.47846, 0.00562525)

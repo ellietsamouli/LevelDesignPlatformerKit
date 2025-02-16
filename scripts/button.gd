@@ -31,3 +31,4 @@ func _on_button_area_3d_area_entered(_area: Area3D) -> void:
 			
 			if target and target.has_method("receive_input"):
 				target.receive_input(button_state)
+				
