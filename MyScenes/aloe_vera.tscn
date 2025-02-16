@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://n6jpiowxyjbn"]
+
+[ext_resource type="PackedScene" uid="uid://bs1hjlsptx4tx" path="res://MyScenes/aloe_leaf.tscn" id="1_h2qxv"]
+
+[node name="AloeVera" type="Node3D"]
+
+[node name="Aloe Leaf" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(1, 0, 0, 0, 0.173648, 0.984808, 0, -0.984808, 0.173648, 0.0253038, -0.0363418, -0.261883)
+
+[node name="Aloe Leaf2" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(1, 0, 0, 0, 0.173648, -0.984808, 0, 0.984808, 0.173648, 0.0253038, 0.132175, 0.193113)
+
+[node name="Aloe Leaf3" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-4.37114e-08, 0.984808, -0.173648, 0, 0.173648, 0.984808, 1, 4.30473e-08, -7.59041e-09, 0.252802, -0.0363418, -0.034385)
+
+[node name="Aloe Leaf4" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-4.37114e-08, -0.984808, -0.173648, 0, 0.173648, -0.984808, 1, -4.30473e-08, -7.59041e-09, -0.202194, 0.132175, -0.034385)
+
+[node name="Aloe Leaf5" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(0.715323, 0.336605, -0.122514, 0, 0.273616, 0.751754, 0.358207, -0.672184, 0.244655, 0.127136, 0.0153239, -0.237819)
+
+[node name="Aloe Leaf6" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(0.715323, -0.336605, -0.122514, 0, 0.273616, -0.751754, 0.358207, 0.672184, 0.244655, -0.0765284, 0.183841, 0.169049)
+
+[node name="Aloe Leaf7" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-0.354182, 0.668009, -0.26138, -0.0461014, 0.269704, 0.751754, 0.715842, 0.347885, -0.0809105, 0.228738, 0.0153239, 0.0674473)
+
+[node name="Aloe Leaf8" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-0.358207, -0.672184, -0.244655, 0, 0.273616, -0.751754, 0.715323, -0.336605, -0.122514, -0.17813, 0.183841, -0.136217)
+
+[node name="Aloe Leaf13" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(0.484844, 0.457597, -0.213381, 0, 0.295833, 0.634415, 0.504902, -0.439418, 0.204904, 0.189371, 0.0516608, -0.191984)
+
+[node name="Aloe Leaf14" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(0.484844, -0.457597, -0.213381, 0, 0.295833, -0.634415, 0.504902, 0.439418, 0.204904, -0.138763, 0.220178, 0.123214)
+
+[node name="Aloe Leaf15" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-0.498581, 0.430403, -0.237003, -0.0498447, 0.291603, 0.634415, 0.488807, 0.468744, -0.177049, 0.182902, 0.0516608, 0.129682)
+
+[node name="Aloe Leaf16" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-0.504902, -0.439418, -0.204904, 1.75811e-11, 0.295833, -0.634415, 0.484844, -0.457597, -0.213381, -0.132295, 0.220178, -0.198452)
+
+[node name="Aloe Leaf9" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(0.368773, 0.793005, -0.212485, -5.99577e-09, 0.232937, 0.869333, 0.820979, -0.356207, 0.0954455, 0.232812, 0.0153239, -0.127634)
+
+[node name="Aloe Leaf10" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(0.368773, -0.793005, -0.212485, 5.99577e-09, 0.232937, -0.869333, 0.820979, 0.356207, 0.0954455, -0.182205, 0.183841, 0.0588644)
+
+[node name="Aloe Leaf11" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-0.82004, 0.347746, -0.128868, -0.0392474, 0.229607, 0.869333, 0.368774, 0.797717, -0.194043, 0.118553, 0.0153239, 0.173124)
+
+[node name="Aloe Leaf12" parent="." instance=ExtResource("1_h2qxv")]
+transform = Transform3D(-0.820979, -0.356207, -0.0954455, 6.00492e-09, 0.232937, -0.869333, 0.368773, -0.793005, -0.212485, -0.0679455, 0.183841, -0.241894)
