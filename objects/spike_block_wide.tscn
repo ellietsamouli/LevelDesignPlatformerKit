@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dpo3dr26b06w3"]
+[gd_scene load_steps=6 format=3 uid="uid://dpo3dr26b06w3"]
 
 [ext_resource type="PackedScene" uid="uid://cl1l60sih7qo0" path="res://models/props/spike-block-wide.glb" id="1_5lq27"]
+[ext_resource type="Script" path="res://scripts/tumbling.gd" id="2_0uh0o"]
 [ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="2_lgsom"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_51hsx"]
@@ -11,6 +12,8 @@ size = Vector3(2, 0.75, 0.75)
 
 [node name="spike-block-wide" instance=ExtResource("1_5lq27")]
 transform = Transform3D(0.999988, -0.00420775, 0.00251857, 0.00420791, 0.999991, -6.06423e-05, -0.0025183, 7.12516e-05, 0.999997, 0, 0, 0)
+script = ExtResource("2_0uh0o")
+roll_speed = 200.0
 
 [node name="DamageDealerArea3D" parent="." index="1" instance=ExtResource("2_lgsom")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)

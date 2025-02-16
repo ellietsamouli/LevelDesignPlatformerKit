@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dc7tn2klaoqdb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fxu50"]
+albedo_color = Color(0.175641, 0.169749, 0.0923498, 1)
+
+[node name="Sunflower Center" type="Node3D"]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(2.3455, 0, 0, 0, 0.435504, 0, 0, 0, 2.3455, 0, 0, -0.0940108)
+material = SubResource("StandardMaterial3D_fxu50")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CSGSphere3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGSphere3D/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="CSGSphere3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.00643757)
+depth = 0.77
+polygon = PackedVector2Array(0.0479575, 0.496077, 0.259453, 0.456681, 0.403889, 0.293469, 0.460632, 0.169654, 0.507058, 0.0402101, 0.486424, -0.173653, 0.33683, -0.365005, 0.120176, -0.48882, -0.117112, -0.494448, -0.32345, -0.393145, -0.473044, -0.173653, -0.509153, 0.0233261, -0.431777, 0.265329, -0.266707, 0.434169)
