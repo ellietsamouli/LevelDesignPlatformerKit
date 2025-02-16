@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvnvoy8y0y84t"]
+
+[ext_resource type="Script" path="res://MyScenes/aloe.gd" id="1_a164r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3v0df"]
+albedo_color = Color(5.05373e-06, 0.495537, 0.170131, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b05l3"]
+
+[node name="Aloe" type="Node3D"]
+script = ExtResource("1_a164r")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 0.596109, 1, -1.47008e-09, 2.60568e-08, 4.37114e-08, 0.0336316, 1.13898e-15, 0, 0.329069, 0)
+material_override = SubResource("StandardMaterial3D_3v0df")
+radius = 0.687189
+sides = 3
+material = SubResource("StandardMaterial3D_b05l3")

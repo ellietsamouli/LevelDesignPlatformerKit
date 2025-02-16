@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bs1hjlsptx4tx"]
+
+[ext_resource type="PackedScene" uid="uid://dvnvoy8y0y84t" path="res://MyScenes/aloe_leafnc.tscn" id="1_kfk55"]
+
+[node name="Aloe Leaf" type="Node3D"]
+
+[node name="Aloe" parent="." instance=ExtResource("1_kfk55")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0178008, 0, 0.0870209)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Aloe"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Aloe/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Aloe/StaticBody3D"]
+depth = 0.085
+polygon = PackedVector2Array(0.00446536, 1.01124, 0.356988, 0.00885838, -0.347406, -0.00761861)

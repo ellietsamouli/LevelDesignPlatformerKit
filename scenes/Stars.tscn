@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bfjw171ab6wlf"]
+[gd_scene load_steps=34 format=3 uid="uid://bfjw171ab6wlf"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_272bv"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_xm32s"]
@@ -27,6 +27,7 @@
 [ext_resource type="PackedScene" uid="uid://bs65o07otxbmm" path="res://objects/moving_object_path_3d.tscn" id="26_v5b42"]
 [ext_resource type="PackedScene" uid="uid://dc7tn2klaoqdb" path="res://MyScenes/sunflower_center.tscn" id="27_5gan6"]
 [ext_resource type="PackedScene" uid="uid://dpo3dr26b06w3" path="res://objects/spike_block_wide.tscn" id="27_om4yb"]
+[ext_resource type="PackedScene" uid="uid://ccnuovnw60w2a" path="res://MyScenes/pot.tscn" id="28_ivtn6"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -394,7 +395,7 @@ transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 4.28049, 2.38046, 32.7277)
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 4.28049, 2.38046, 1.62739)
 
 [node name="Plantcagewall" parent="." instance=ExtResource("25_4ctd8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23462, 2.46277, 32.5707)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3039, 2.46277, 32.5707)
 
 [node name="Plantcagewall4" parent="." instance=ExtResource("25_4ctd8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0773, 2.46277, 32.5707)
@@ -420,6 +421,15 @@ transform = Transform3D(1.56205, 0, 0, 0, 1, 0, 0, 0, 1.69589, 10.5954, 7.06027,
 
 [node name="Sunflower Center2" parent="." instance=ExtResource("27_5gan6")]
 transform = Transform3D(1.56205, 0, 0, 0, 1, 0, 0, 0, 1.69589, -3.17384, 8.84569, 40.548)
+
+[node name="Poppy13" parent="." instance=ExtResource("20_75q0v")]
+transform = Transform3D(0.293294, 0, -0.063075, 0, 1, 0, 0.063075, 0, 0.293294, -3.11022, 2.35387, 35.6317)
+
+[node name="Sunflower Center3" parent="." instance=ExtResource("27_5gan6")]
+transform = Transform3D(1.56205, 0, 0, 0, 1, 0, 0, 0, 1.69589, -3.17384, 8.84569, 35.6386)
+
+[node name="Pot" parent="." instance=ExtResource("28_ivtn6")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -4.2855, 3.00447, 24.1528)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
