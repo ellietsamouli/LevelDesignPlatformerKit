@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dusfjhvgbeas6"]
+
+[ext_resource type="PackedScene" uid="uid://hjj8wapvb6cj" path="res://MyScenes/hand_trowel.tscn" id="1_wcmuw"]
+
+[node name="Hand Trowel Coll" type="Node3D"]
+
+[node name="Hand Trowel" parent="." instance=ExtResource("1_wcmuw")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0128786, 0, 0.0696124)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Hand Trowel"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Hand Trowel/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Hand Trowel/StaticBody3D"]
+depth = 0.12
+polygon = PackedVector2Array(-0.000670634, 0.68209, 0.931886, 0.249117, 0.0144685, -0.202022, -0.912033, 0.212784, -0.909005, 0.261229)

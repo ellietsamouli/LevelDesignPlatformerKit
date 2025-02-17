@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://hjj8wapvb6cj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ku57"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gtgyt"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ruuos"]
+next_pass = SubResource("StandardMaterial3D_gtgyt")
+albedo_color = Color(0.441149, 0.160562, 0.09296, 1)
+
+[node name="Hand Trowel" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(-1.96191e-15, 9.78203e-09, 2.5695, 1.19481, -9.78203e-09, 0, 5.22268e-08, 0.223787, -1.12316e-07, 0, 0.232412, 0)
+operation = 1
+snap = 1e-06
+radius = 0.425527
+radial_segments = 4
+rings = 3
+material = SubResource("StandardMaterial3D_3ku57")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGSphere3D"]
+transform = Transform3D(0.71108, 0, 0, 0, 2.20741, 0.454289, 0, -0.0196468, 0.387165, -0.00284856, 0.688396, -0.37034)
+radius = 0.0248564
+height = 0.746
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="CSGSphere3D"]
+transform = Transform3D(0.0836953, 0, 0, 0, 0.192308, 0.44468, 0, -0.169176, 0.00383424, -0.00284856, 1.68819, -0.538289)
+material = SubResource("StandardMaterial3D_ruuos")
