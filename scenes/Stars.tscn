@@ -148,6 +148,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Icon" type="TextureRect" parent="HUD/Control"]
 layout_mode = 0
@@ -157,6 +158,7 @@ offset_right = 313.0
 offset_bottom = 323.0
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("20_m7jjy")
+metadata/_edit_use_anchors_ = true
 
 [node name="x" type="Label" parent="HUD/Control"]
 layout_mode = 0
@@ -166,6 +168,7 @@ offset_right = 144.0
 offset_bottom = 123.0
 text = "×"
 label_settings = ExtResource("21_a8iea")
+metadata/_edit_use_anchors_ = true
 
 [node name="Level Complete" type="Label" parent="HUD/Control"]
 unique_name_in_owner = true
@@ -180,6 +183,7 @@ offset_bottom = 287.0
 grow_horizontal = 2
 text = "Level Complete!"
 label_settings = SubResource("LabelSettings_ri8jt")
+metadata/_edit_use_anchors_ = true
 
 [node name="CoinsLabel" type="Label" parent="HUD/Control"]
 unique_name_in_owner = true
@@ -190,6 +194,7 @@ offset_right = 368.0
 offset_bottom = 123.0
 text = "0"
 label_settings = ExtResource("21_a8iea")
+metadata/_edit_use_anchors_ = true
 
 [node name="PlayAgainButton" type="Button" parent="HUD/Control"]
 unique_name_in_owner = true
@@ -215,6 +220,7 @@ text = "Play Again?"
 icon = ExtResource("24_c60ot")
 flat = true
 icon_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TimeLabel" type="Label" parent="HUD/Control"]
 unique_name_in_owner = true
@@ -231,6 +237,7 @@ text = "00"
 label_settings = SubResource("LabelSettings_x4d2s")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="TimeNameLabel" type="Label" parent="HUD/Control"]
 unique_name_in_owner = true
@@ -247,6 +254,7 @@ text = "TIME"
 label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="flowers-tall2" parent="." instance=ExtResource("17_b26wc")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -35.0597, 2.37447, 16.3869)
@@ -443,28 +451,8 @@ transform = Transform3D(-0.0134779, -0.0341821, 1.91852, -1.47032, 0.540117, 0.0
 [node name="platform24" parent="." instance=ExtResource("13_nltfc")]
 transform = Transform3D(0.00241419, 0.000791578, 1.92016, -0.709896, 0.780685, -0.000788396, -1.78411, -0.310633, 0.00291185, -5.27413, 6.0608, -12.0458)
 
-[node name="platform30" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(-0.0390297, -0.0150884, 0.999124, -0.00280637, 0.999884, 0.0149903, -0.999234, -0.00221885, -0.0390675, -30.4125, 7.416, 5.66942)
-script = SubResource("GDScript_5cga1")
-start_visible = true
-
-[node name="platform31" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(-0.0390297, -0.0150884, 0.999124, -0.00280637, 0.999884, 0.0149903, -0.999234, -0.00221885, -0.0390675, -30.4125, 7.45497, 1.7313)
-script = SubResource("GDScript_5cga1")
-start_visible = true
-
 [node name="platform34" parent="." instance=ExtResource("13_nltfc")]
 transform = Transform3D(-0.0390297, -0.0150884, 0.999124, -0.00280637, 0.999884, 0.0149903, -0.999234, -0.00221885, -0.0390675, -20.4125, 4.45497, -1.2687)
-script = SubResource("GDScript_5cga1")
-start_visible = true
-
-[node name="platform32" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(-0.0390297, -0.0150884, 0.999124, -0.00280637, 0.999884, 0.0149903, -0.999234, -0.00221885, -0.0390675, -30.4125, 7.45497, -4.15947)
-script = SubResource("GDScript_5cga1")
-start_visible = true
-
-[node name="platform33" parent="." instance=ExtResource("13_nltfc")]
-transform = Transform3D(-0.0390297, -0.0150884, 0.999124, -0.00280637, 0.999884, 0.0149903, -0.999234, -0.00221885, -0.0390675, -30.4125, 7.45497, -8.38888)
 script = SubResource("GDScript_5cga1")
 start_visible = true
 
@@ -520,7 +508,7 @@ transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -45.0765, 22.5548, -1.72037)
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -24.1187, 2.38046, 32.7277)
 
 [node name="Soil4" parent="." instance=ExtResource("25_2cgrn")]
-transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -24.1187, 2.38046, 1.17922)
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -23.9985, 2.38046, 1.17922)
 
 [node name="Soil2" parent="." instance=ExtResource("25_2cgrn")]
 transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 4.28049, 2.38046, 32.7277)
@@ -562,7 +550,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.17612, 7.46482, 29.6285)
 [node name="moving_object_path" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("26_v5b42")]
 curve = SubResource("Curve3D_2tscm")
 object_to_move = NodePath("../Water")
-movement_speed = 0.3
 is_on_from_start = false
 ping_pong = true
 
@@ -623,37 +610,26 @@ transform = Transform3D(4.82515, 0, -1.31069, 0, 3.77122, 0, 1.31069, 0, 4.82515
 [node name="flowers5" parent="." instance=ExtResource("30_u1gxl")]
 transform = Transform3D(4.5361, 0.00774837, 2.10326, -0.0100019, 3.77121, -0.00285056, -2.10326, -0.00122277, 4.53611, -1.62088, 11.5006, 29.7921)
 
+[node name="button3" parent="." node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
+transform = Transform3D(1.99973, 3.76385e-09, -0.0328829, -3.634e-09, 2, 7.93271e-09, 0.0328829, -7.8718e-09, 1.99973, -23.7819, 4.86741, 1.87666)
+target = NodePath("../moving_object_path")
+
+[node name="button2" parent="." node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
+transform = Transform3D(0.999864, -3.281e-10, -0.0164386, 3.90457e-10, 1, 3.79419e-09, 0.0164386, -3.80014e-09, 0.999864, -13.169, 13.6738, 2.97046)
+target = NodePath("../moving_object_path2")
+
+[node name="checkpoint" parent="." instance=ExtResource("32_eklwb")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.03029e-13, 0, 1.03029e-13, 1, 12.8387, 14.7229, -6.25238)
+
+[node name="button" parent="." node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
+transform = Transform3D(1.99973, 3.76385e-09, -0.0328829, -3.634e-09, 2, 7.93271e-09, 0.0328829, -7.8718e-09, 1.99973, -3.25639, 5.90954, 23.827)
+target = NodePath("../moving_object_path")
+
 [node name="Potcollision" parent="." instance=ExtResource("30_4g76h")]
 transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, -3.50294, 2.93406, 23.8461)
 
-[node name="button" parent="Potcollision" node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
-transform = Transform3D(0.499932, 9.40962e-10, -0.00822072, -0.00822072, -1.98878e-08, -0.499932, -1.26784e-09, 0.5, -1.98696e-08, 0.0616365, 0.0047698, 0.743871)
-target = NodePath("../../moving_object_path")
-
-[node name="button3" parent="Potcollision" node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
-transform = Transform3D(0.499932, 9.40962e-10, -0.00822072, -0.00822072, -1.98878e-08, -0.499932, -1.26784e-09, 0.5, -1.98696e-08, -5.06974, 5.49236, 0.483337)
-target = NodePath("../../moving_object_path")
-
-[node name="button2" parent="Potcollision" node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
-transform = Transform3D(0.249966, -8.20251e-11, -0.00410966, -0.00410966, -9.97784e-09, -0.249966, -8.20251e-11, 0.25, -9.97784e-09, -2.41652, 5.21891, 2.68493)
-target = NodePath("../../moving_object_path2")
-
-[node name="checkpoint" parent="Potcollision" instance=ExtResource("32_eklwb")]
-transform = Transform3D(0.25, 0, 0, 0, -1.09279e-08, -0.25, 0, 0.25, -1.09279e-08, 4.08541, 7.52462, 2.94721)
-
 [node name="Potcollision4" parent="." instance=ExtResource("30_4g76h")]
-transform = Transform3D(3, 0, 0, 0, -1.31134e-07, 3, 0, -3, -1.31134e-07, -23.5545, 2.93406, 1.99333)
-
-[node name="button3" parent="Potcollision4" node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
-transform = Transform3D(0.499932, 9.40962e-10, -0.00822072, -0.00822072, -1.98878e-08, -0.499932, -1.26784e-09, 0.5, -1.98696e-08, -5.06974, 5.49236, 0.483337)
-target = NodePath("../../moving_object_path")
-
-[node name="button2" parent="Potcollision4" node_paths=PackedStringArray("target") instance=ExtResource("31_etjpy")]
-transform = Transform3D(0.249966, -8.20251e-11, -0.00410966, -0.00410966, -9.97784e-09, -0.249966, -8.20251e-11, 0.25, -9.97784e-09, -2.41652, 5.21891, 2.68493)
-target = NodePath("../../moving_object_path2")
-
-[node name="checkpoint" parent="Potcollision4" instance=ExtResource("32_eklwb")]
-transform = Transform3D(0.25, 0, 0, 0, -1.09279e-08, -0.25, 0, 0.25, -1.09279e-08, 4.08541, 7.52462, 2.94721)
+transform = Transform3D(3.28994, 0, 0, 0, -1.4175e-07, 3, 0, -3.24285, -1.31134e-07, -23.8273, 2.93406, 1.99333)
 
 [node name="AloeVera2" parent="." instance=ExtResource("29_s38ad")]
 transform = Transform3D(2.18956, 0, -2.05082, 0, 3, 0, 2.05082, 0, 2.18956, 13.0814, 6.4187, 1.26191)
@@ -837,13 +813,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.2039, 10.4491, 28.5467)
 script = null
 
 [node name="PetalColl" parent="." instance=ExtResource("39_3g837")]
-transform = Transform3D(1.28887, 1.06581e-14, 0, -1.77636e-14, 1, 0, 0, 0, 1.36476, -22.4584, 5.08878, 1.91052)
+transform = Transform3D(1.28887, 1.06581e-14, 0, -1.77636e-14, 1, 0, 0, 0, 1.36476, -22.4119, 5.08878, 1.91052)
 script = ExtResource("23_vdayl")
 rotation_speed = 10.0
 min_angle = 0.0
 
 [node name="PetalColl14" parent="." instance=ExtResource("39_3g837")]
-transform = Transform3D(1.28887, 1.06581e-14, 0, -1.42109e-14, 1, 0, 0, 0, 1.36476, -25.2383, 5.08878, 1.91052)
+transform = Transform3D(1.28887, 1.06581e-14, 0, -1.42109e-14, 1, 0, 0, 0, 1.36476, -25.1919, 5.08878, 1.79562)
 script = ExtResource("23_vdayl")
 rotation_speed = 10.0
 min_angle = -90.0
@@ -875,13 +851,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.20003, 4, 23.8224)
 transform = Transform3D(0.535834, 0, 0, 0, 1, 0, 0, 0, 1, 4.40292, 2.997, 23.7802)
 
 [node name="Water4" parent="." instance=ExtResource("40_suqw3")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30.1687, 4, -6.38604)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30.1687, 4.13318, -8.43036)
 
-[node name="Water5" parent="." instance=ExtResource("40_suqw3")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.6311, 4, -6.38604)
+[node name="Water6" parent="." instance=ExtResource("40_suqw3")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30.1687, 4.13318, -4.21071)
+
+[node name="Water7" parent="." instance=ExtResource("40_suqw3")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30.1687, 4.13318, 1.72711)
+
+[node name="Water8" parent="." instance=ExtResource("40_suqw3")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -30.1687, 4.13318, 5.69314)
 
 [node name="WaterSpray2" parent="." instance=ExtResource("41_obuho")]
-transform = Transform3D(-3.43901e-08, 0, -1, 0, 1, 0, 0.786755, 0, -4.37114e-08, -31.9075, 2.997, -1.02501)
+transform = Transform3D(-3.43901e-08, 0, -1, 0, 1, 0, 0.786755, 0, -4.37114e-08, -30.5551, 2.997, -1.02501)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
