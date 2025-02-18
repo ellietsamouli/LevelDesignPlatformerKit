@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkc613xb8dhpx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7gsyi"]
+albedo_color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+
+[node name="WaterSpray" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+radius = 0.259
+height = 23.705
+material = SubResource("StandardMaterial3D_7gsyi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CSGCylinder3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGCylinder3D/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="CSGCylinder3D/StaticBody3D"]
+depth = 0.46
+polygon = PackedVector2Array(0.385033, -11.798, 0.259527, 11.7555, -0.158829, 11.7555, -0.242501, -11.9653)

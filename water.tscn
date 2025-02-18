@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://4lp8eyxf5j8c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sowfu"]
+albedo_color = Color(2.35841e-06, 0.407293, 0.564553, 1)
+
+[node name="Water" type="Node3D"]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(2.07443, 0, 0, 0, 1, 0, 0, 0, 3.44426, 0, 0, 0)
+material = SubResource("StandardMaterial3D_sowfu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CSGSphere3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CSGSphere3D/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="CSGSphere3D/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.821774, 0, 0, 0)
+polygon = PackedVector2Array(-0.00107071, 0.507634, 0.251577, 0.434076, 0.436262, 0.250181, 0.499793, 0.00192255, 0.431829, -0.26779, 0.251577, -0.44862, 0.000406745, -0.509918, -0.244854, -0.439425, -0.435448, -0.26166, -0.503412, 0.00498752, -0.435448, 0.247116, -0.256674, 0.431011)
