@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cstpm4443lbcu"]
+
+[ext_resource type="PackedScene" uid="uid://bfqsucj0mxb8e" path="res://MyScenes/cactus.tscn" id="1_f78kl"]
+
+[node name="CactusColl" type="Node3D"]
+
+[node name="Cactus" parent="." instance=ExtResource("1_f78kl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.121947, 0, -0.0823245)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Cactus"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Cactus/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Cactus/StaticBody3D"]
+depth = 5.105
+polygon = PackedVector2Array(0.588742, -0.210253, 0.294969, -0.359911, 0.017825, -0.387625, -0.303662, -0.370996, -0.586349, -0.237967, -0.808065, -0.010709, -0.963265, 0.271978, -1.00761, 0.604551, -0.974351, 0.865067, -0.857951, 1.14221, -0.608521, 1.40273, -0.342462, 1.5413, -0.0320608, 1.60227, 0.294969, 1.55793, 0.583199, 1.43044, 0.793829, 1.21981, 0.932401, 0.964839, 1.03217, 0.604551, 0.971201, 0.283064, 0.838172, 0.0280913)
