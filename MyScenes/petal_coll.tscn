@@ -3,9 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://b1d58iefmtp5d" path="res://MyScenes/petal.tscn" id="1_ualcy"]
 
 [node name="PetalColl" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1.8, 0, 0, 0)
 
 [node name="Petal" parent="." instance=ExtResource("1_ualcy")]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.118908)
+transform = Transform3D(1, 4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 2.98023e-08, -4.37114e-08, -2.98023e-08, -1, 0, 0, 0.118908)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Petal"]
 
