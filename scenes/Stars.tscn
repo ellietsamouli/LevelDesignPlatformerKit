@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=3 uid="uid://bfjw171ab6wlf"]
+[gd_scene load_steps=43 format=3 uid="uid://bfjw171ab6wlf"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_272bv"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_xm32s"]
@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://ba37rs51dctrl" path="res://MyScenes/potcollision.tscn" id="30_4g76h"]
 [ext_resource type="PackedScene" uid="uid://crjxc823ldoc3" path="res://models/props/flowers.glb" id="30_u1gxl"]
 [ext_resource type="PackedScene" uid="uid://g73m8k0j7lyo" path="res://objects/button.tscn" id="31_etjpy"]
+[ext_resource type="PackedScene" uid="uid://dxive3p7cfkat" path="res://MyScenes/petal_coll.tscn" id="32_vd0xl"]
 [ext_resource type="PackedScene" uid="uid://dusfjhvgbeas6" path="res://MyScenes/hand_trowel_coll.tscn" id="34_85eco"]
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/coin.tscn" id="34_gqds0"]
 [ext_resource type="PackedScene" uid="uid://bs5mc7nlmg1ks" path="res://MyScenes/stem.tscn" id="34_kbnar"]
@@ -614,6 +615,9 @@ target = NodePath("../../moving_object_path")
 
 [node name="button3" parent="Potcollision" instance=ExtResource("31_etjpy")]
 transform = Transform3D(0.399946, -1.3124e-10, -0.00657546, -0.00657546, -1.59645e-08, -0.399946, -1.3124e-10, 0.4, -1.59645e-08, 4.10976, 5.52014, 1.1738)
+
+[node name="PetalColl" parent="Potcollision" instance=ExtResource("32_vd0xl")]
+transform = Transform3D(0.25, 0, 0, 0, -0.241481, -0.0647048, 0, 0.0647048, -0.241481, 2.62574, 6.21152, 0.266485)
 
 [node name="Potcollision2" parent="." instance=ExtResource("30_4g76h")]
 transform = Transform3D(5.63947, 0, 0, 0, -2.22716e-07, 3.33182, 0, -5.09516, -1.45639e-07, 12.4002, 2.91904, 9.50623)

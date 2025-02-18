@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxive3p7cfkat"]
+
+[ext_resource type="PackedScene" uid="uid://b1d58iefmtp5d" path="res://MyScenes/petal.tscn" id="1_ualcy"]
+
+[node name="PetalColl" type="Node3D"]
+
+[node name="Petal" parent="." instance=ExtResource("1_ualcy")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.118908)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Petal"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Petal/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Petal/StaticBody3D"]
+transform = Transform3D(-2.29158e-08, -0.515113, -0.374506, -2.99418e-08, -0.0366617, 5.26197, -0.456257, 1.84509e-08, -3.81084e-07, 0.993767, 0.0382833, -0.00676424)
+depth = 0.03
+polygon = PackedVector2Array(0.699981, -0.478606, 1.25104, 0.550857, 1.42059, 1.77912, 1.26012, 3.12463, 0.751454, 4.07208, 0.0278141, 4.49329, -0.710964, 4.16561, -1.22266, 3.24154, -1.41041, 2.07167, -1.23736, 0.639057, -0.711148, -0.384457, -0.0154225, -0.766495)
