@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dag2jtwklpixi"]
+
+[ext_resource type="PackedScene" uid="uid://bgewl4r3yqiob" path="res://MyScenes/margaritapetal.tscn" id="1_hm76i"]
+
+[node name="margaritapetalcoll" type="Node3D"]
+
+[node name="Petal" parent="." instance=ExtResource("1_hm76i")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Petal"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Petal/StaticBody3D"]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Petal/StaticBody3D"]
+polygon = PackedVector2Array(0.430342, -0.11791, 0.83403, -0.105552, 1.36541, -0.0231667, 1.213, 0.0756955, 0.619828, 0.112769, -0.405867, 0.125127, -0.982564, 0.0880534, -1.23796, 0.0715763, -1.41097, 0.0139067, -1.22148, -0.0808363, -0.772482, -0.105552, -0.327601, -0.130267)
