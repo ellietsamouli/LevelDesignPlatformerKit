@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://bfjw171ab6wlf"]
+[gd_scene load_steps=65 format=3 uid="uid://bfjw171ab6wlf"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_272bv"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_xm32s"]
@@ -45,6 +45,8 @@
 [ext_resource type="PackedScene" uid="uid://bfp85lbab7jgu" path="res://tall flower coll.tscn" id="44_uhtai"]
 [ext_resource type="PackedScene" uid="uid://dy017k58p20sk" path="res://objects/cloud.tscn" id="45_dwbj4"]
 [ext_resource type="PackedScene" uid="uid://bprrlrsrodjse" path="res://objects/saw.tscn" id="45_s0pux"]
+[ext_resource type="AudioStream" uid="uid://dnlm0y44nen08" path="res://RadioFolk.mp3" id="47_fk8af"]
+[ext_resource type="PackedScene" uid="uid://ct1wil3iiv3ps" path="res://radio.tscn" id="47_mjlpt"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -167,12 +169,12 @@ environment = ExtResource("1_272bv")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_xm32s")]
-transform = Transform3D(0.934447, 0, 0.356102, 0, 1, 0, -0.356102, 0, 0.934447, 21.9491, 9.06022, 33.2656)
+transform = Transform3D(0.505416, 0, -0.862876, 0, 1, 0, 0.862876, 0, 0.505416, 24.2763, 5.13388, 35.7846)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
-transform = Transform3D(-0.999528, 0.0129876, -0.0278512, -2.49236e-08, 0.906308, 0.422618, 0.0307308, 0.422418, -0.905879, 6.55539, 4.40813, 61.5658)
+transform = Transform3D(-0.195245, -0.414484, 0.888865, -2.49236e-08, 0.906308, 0.422618, -0.980755, 0.082514, -0.176951, -6.1761, 0.481789, 25.2718)
 script = ExtResource("3_j8dbq")
 target = NodePath("../Player")
 
@@ -610,6 +612,9 @@ trampoline_strength = 15.0
 [node name="Poppy47" parent="." instance=ExtResource("20_75q0v")]
 transform = Transform3D(0.3, 0, 0, 0, 0.5, 0, 0, 0, 0.3, -33.1095, 1.84392, 35.7113)
 
+[node name="Poppy59" parent="." instance=ExtResource("20_75q0v")]
+transform = Transform3D(0.3, 0, 0, 0, 0.5, 0, 0, 0, 0.3, -33.1095, 0.491048, 38.8187)
+
 [node name="trampoline8" parent="." instance=ExtResource("23_11ahc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.1956, 4.8856, 35.8265)
 trampoline_strength = 15.0
@@ -654,7 +659,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0773, 2.46277, 32.5707)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.23462, 2.46277, 1.66978)
 
 [node name="Plantcagewall3" parent="." instance=ExtResource("25_4ctd8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0331, 2.46277, 1.00572)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.0331, 2.46277, 1.17537)
 
 [node name="Flowers" parent="." instance=ExtResource("25_koynn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2581, 13.4539, 2.97056)
@@ -1519,7 +1524,7 @@ is_on_from_start = false
 ping_pong = true
 
 [node name="flag2" parent="." instance=ExtResource("44_2sw85")]
-transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -44.1573, 22.9133, -1.48823)
+transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -44.1573, 22.4573, -0.486485)
 
 [node name="Node3D" parent="." instance=ExtResource("44_uhtai")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -25.5913, 2.37231, 46.5852)
@@ -1640,6 +1645,16 @@ transform = Transform3D(3.41267, -4.42786, -15.51, 15.7413, 4.37202, 2.21543, 3.
 
 [node name="cube26" parent="." instance=ExtResource("45_dwbj4")]
 transform = Transform3D(-1.59622, 14.0532, -8.47175, 13.064, 6.23892, 7.88783, 9.92945, -5.94932, -11.7398, -93.3715, -31.5854, -44.7117)
+
+[node name="Radio" parent="." instance=ExtResource("47_mjlpt")]
+transform = Transform3D(0.550917, 0.0631586, 0.832167, -0.0676428, 0.997231, -0.0309051, -0.831814, -0.0392639, 0.553663, -43.6395, 22.8745, -3.95842)
+
+[node name="RadioFolk" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.058, 23.2799, -2.13112)
+stream = ExtResource("47_fk8af")
+volume_db = 10.0
+autoplay = true
+parameters/looping = true
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]

@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://ct1wil3iiv3ps"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8trk5"]
+albedo_color = Color(0.354933, 0.223943, 0.0327626, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_123fy"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ml7x"]
+albedo_color = Color(0.458405, 0.458405, 0.458405, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gmuyv"]
+albedo_color = Color(0.190762, 0.190762, 0.190762, 1)
+
+[node name="Radio" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(3.84642, 0, 0, 0, 1.82544, 0, 0, 0, 0.766482, 0, 0.681294, 0)
+material = SubResource("StandardMaterial3D_8trk5")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(0.556287, 0, 0, 0, -8.74228e-09, -0.546186, 0, 0.2, -2.38746e-08, -1.43496, 0.150133, 0.300523)
+sides = 20
+material = SubResource("StandardMaterial3D_123fy")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="."]
+transform = Transform3D(0.556287, 0, 0, 0, -8.74228e-09, -0.546186, 0, 0.2, -2.38746e-08, 1.48255, 0.162072, 0.300523)
+sides = 20
+material = SubResource("StandardMaterial3D_123fy")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(2.66456, 0, 0, 0, 0.912601, 0, 0, 0, 0.365796, 0, 0.976173, 0.319321)
+material = SubResource("StandardMaterial3D_3ml7x")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(2.17033, 0, 0, 0, 0.130179, 0, 0, 0, 0.17755, 0, 0.129008, 0.35468)
+material = SubResource("StandardMaterial3D_3ml7x")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(-2.96328e-08, -0.143512, 0, 0.67792, -6.2731e-09, 0, 0, 0, 0.140844, -1.72214, 1.68987, 0)
+material = SubResource("StandardMaterial3D_gmuyv")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(3.59826, -4.44089e-16, 0, -1.88571e-14, 0.143512, 0, 0, 0, 0.140844, 0.0176151, 2.08942, 0)
+material = SubResource("StandardMaterial3D_gmuyv")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(-2.96328e-08, -0.143512, 0, 0.67792, -6.2731e-09, 0, 0, 0, 0.140844, 1.72214, 1.68987, 0)
+material = SubResource("StandardMaterial3D_gmuyv")
